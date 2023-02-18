@@ -1,4 +1,5 @@
-# Author :Quang Le
+# Author :
+Quang Le
 
 # Desciption:
 Are you a fan of funny, relatable, and sometimes absurd internet humor? Look no further than our meme website! We're dedicated to providing a platform for all kinds of memes, from classic image macros to the latest viral trends!
