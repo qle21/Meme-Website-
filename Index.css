@@ -1,0 +1,157 @@
+/*General Page layout */
+
+ /*  Page color */
+body{
+background-color: lightblue;
+}
+
+/*Home, Design, Contact */
+header nav {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+body h1 { /* Uncomment h1 in body if you want to display the title on screen*/
+  display: flex;
+  justify-content: center;
+}
+/*Hyperlink property */
+header nav a {
+  display: inline-block;
+  background-color: gray;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white ;
+}
+/*---------------------------------------------------------------------------------------------*/
+/*Home Page layout */
+
+.home-container {/*Contain all 3 tab and set thier layout in main page */
+  display: grid;
+  grid-template-columns:1fr 3fr 3fr;
+  grid-template-rows: auto;
+  grid-template-areas: "headshot welcome recent-news";
+  height: 40vh;
+  width: auto;
+ /* background-color: optional;*/
+}
+
+.headshot {/*Headshot tab */
+  width: 200px;
+  height: 200px;
+  background-image: url('headshot.jpg');// image in our storage
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px;  
+}
+
+.welcome {/*Welcome tab */
+  grid-area: welcome;
+  text-align: left;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid red;  
+  margin: 20px;  
+}
+
+.recent-news {/*New tab */
+  grid-area: recent-news;
+  text-align: left;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid red;  
+  margin: 20px;  
+
+  /*width: 100%;
+  height: 200px; */ /*Uncomment this to get the same result as in the Example */
+}
+
+
+
+@media (max-width: 770px) {/*Flexibility */
+  .home-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "headshot"
+      "welcome"
+      "recent-news";
+  }
+}
+/*---------------------------------------------------------------------------------------------*/
+
+/*Project Page layout */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+ border: 2px solid red;  
+ background-color:white;
+}
+
+.project .image {
+  width: 100%;
+  height: auto;
+}
+
+.project .text {
+  text-align: left;
+}
+
+@media (max-width: 770px) {
+  .project-container {
+    grid-template-columns: 1fr;// we allow only one item when we shrink if we reach 770 px
+  }
+}
+
+.project-text {
+  margin-top: 10px;
+  text-align: center;
+}
+/*---------------------------------------------------------------------------------------------*/
+
+/*Contact Page layout */
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+section {
+  flex: 1;
+  padding: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label,
+input,
+textarea {
+  margin: 0.5em 0;
+  width: 30%;
+}
+
+input[type="submit"] {
+  align-self: flex-start;
+  width: 10%;
+}
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Index.css">
+    <title>My Online Portfolio</title>
+  </head>
+  <body>
+  
+      <!--<h1>My Online Portfolio</h1>-->  <!--Uncomment this if you want to display the title on screen--> 
+     <header>
+      <nav>
+        <a href="Index.html">Home</a>
+        <a href="designprojects.html">Design Projects</a>
+        <a href="contactme.html">Contact Me</a>
+      </nav>
+    </header>
+
+    <!--Main container--> 
+    <main>
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <!--Form container--> 
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+
+        <!--Send Message Id use for JS--> 
+        <p id="message-sent" style="display: none;">Message Sent!</p>
+      </section>
+    </main>
+  </body>
+</html>
