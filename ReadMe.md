@@ -1,18 +1,18 @@
-#Author :Quang Le
+# Author :Quang Le
 
-#Desciption:
+# Desciption:
 Are you a fan of funny, relatable, and sometimes absurd internet humor? Look no further than our meme website! We're dedicated to providing a platform for all kinds of memes, from classic image macros to the latest viral trends!
 
-#Project goal: 
+# Project goal: 
 Welcome to my meme website! Our goal is to provide a fun and entertaining platform for users to create, share, and enjoy all kinds of memes. Whether you're a fan of classic memes, or prefer the latest internet trends, you'll find a wide variety of content to explore and enjoy
 
-#Instruction:
+# Instruction:
 
 1>Download the code 
 
 2> Open the Index.html with any browser (such as google)
 
-#Reference 
+# Reference 
 
 +++++++++++++Css+++++++++++++
 https://www.w3schools.com/css/
